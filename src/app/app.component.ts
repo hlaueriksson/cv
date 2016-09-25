@@ -20,6 +20,9 @@ export class AppComponent implements OnInit {
   }
 
   getCv(): void {
-    this.cvService.getCv().then(x => this.cv = x);
+    this.cvService.getCv().then(x => {
+      this.cv = x;
+      console.log(this.cv); // TODO: delete
+    });
   }
 }

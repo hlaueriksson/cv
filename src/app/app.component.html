@@ -2,3 +2,5 @@
   {{title}}
 </h1>
 <h2>{{cv.name}} - {{cv.title}}</h2>
+
+<app-position *ngFor="let position of cv.experience" [position]="position"></app-position>

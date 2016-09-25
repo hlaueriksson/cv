@@ -6,10 +6,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { PositionsComponent } from './positions/positions.component';
+import { PositionComponent } from './position/position.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PositionsComponent,
+    PositionComponent
   ],
   imports: [
     BrowserModule,
