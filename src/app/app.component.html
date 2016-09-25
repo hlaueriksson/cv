@@ -1,6 +1,11 @@
-<h1>
-  {{title}}
-</h1>
-<h2>{{cv.name}} - {{cv.title}}</h2>
+<h1>{{cv.name}}</h1>
+<h2>{{cv.title}}</h2>
+
+<p>{{cv.description}}</p>
+
+<ul *ngIf="cv.urls">
+  <li>LinkedIn: <a href="{{cv.urls.linkedin}}">{{cv.urls.linkedin}}</a></li>
+  <li>Portfolio: <a href="{{cv.urls.portfolio}}">{{cv.urls.portfolio}}</a></li>
+</ul>
 
 <app-position *ngFor="let position of cv.experience" [position]="position"></app-position>
