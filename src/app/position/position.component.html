@@ -1,3 +1,6 @@
-<p>{{position.company}}</p>
+<h3>{{position.company}}</h3>
+<p>{{position.title}}</p>
+<p>{{position.description}}</p>
+<p>{{position.from}} - {{position.to}}</p>
 
 <app-project *ngFor="let project of position.projects" [project]="project"></app-project>
