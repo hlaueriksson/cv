@@ -6,7 +6,7 @@ import 'rxjs/add/operator/toPromise';
 import { Resume } from './models';
 
 @Injectable()
-export class CvService {
+export class ResumeService {
 
   private url = 'sv.json';
 
