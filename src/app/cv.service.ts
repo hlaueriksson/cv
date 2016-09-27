@@ -3,7 +3,7 @@ import { Http } from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
 
-import { Cv } from './cv';
+import { Cv } from './models';
 
 @Injectable()
 export class CvService {

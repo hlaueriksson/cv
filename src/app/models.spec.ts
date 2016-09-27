@@ -1,6 +1,6 @@
 /* tslint:disable:no-unused-variable */
 
-import {Cv} from './cv';
+import {Cv} from './models';
 
 describe('Cv', () => {
   it('should create an instance', () => {

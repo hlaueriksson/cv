@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { Position } from '../cv';
+import { Position } from '../models';
 
 @Component({
   selector: 'app-position',

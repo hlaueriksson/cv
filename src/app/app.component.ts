@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Cv } from './cv';
+import { Cv } from './models';
 import { CvService } from './cv.service';
 
 @Component({
