@@ -24,8 +24,28 @@ export class AppComponent implements OnInit {
     this.resumeService.getResume().then(x => {
       this.resume = x;
       this.keywords = this.getKeywords();
+      this.updateProjects();
       console.log(this.resume); // TODO: delete
       console.log(this.keywords);
+    });
+  }
+
+  updateProjects(): void {
+    var id: number = 0;
+
+    this.resume.positions.forEach(position => {
+      position.projects.forEach(project => {
+        id++;
+        project.id = id.toString();
+        project.tokens =
+          project.name +
+          project.description +
+          project.url +
+          project.roles.join() +
+          project.keywords.join() +
+          project.from +
+          project.to;
+      })
     });
   }
 

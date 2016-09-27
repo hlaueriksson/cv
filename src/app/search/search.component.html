@@ -1,0 +1,6 @@
+<div id="search-component">
+  <input #searchBox id="search-box" (keyup)="search(searchBox.value)" placeholder="Sök projekt" />
+  <div *ngFor="let project of result | async" class="search-result">
+    <a href="#{{project.id}}">{{project.name}}</a>
+  </div>
+</div>

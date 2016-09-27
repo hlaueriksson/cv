@@ -8,12 +8,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { PositionComponent } from './position/position.component';
 import { ProjectComponent } from './project/project.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PositionComponent,
-    ProjectComponent
+    ProjectComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

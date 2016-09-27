@@ -7,5 +7,15 @@ export class Position {
 }
 
 export class Project {
+    name: string;
+    description: string;
+    url: string;
+    roles: string[];
     keywords: string[];
+    from: string;
+    to: string;
+
+    // derived
+    id: string;
+    tokens: string;
 }
