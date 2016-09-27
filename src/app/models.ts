@@ -1,5 +1,5 @@
-export class Cv {
-    experience: Position[];
+export class Resume {
+    positions: Position[];
 }
 
 export class Position {

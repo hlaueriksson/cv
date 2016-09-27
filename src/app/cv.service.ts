@@ -3,7 +3,7 @@ import { Http } from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
 
-import { Cv } from './models';
+import { Resume } from './models';
 
 @Injectable()
 export class CvService {
@@ -12,10 +12,10 @@ export class CvService {
 
   constructor(private http: Http) { }
 
-  getCv(): Promise<Cv> {
+  getResume(): Promise<Resume> {
     return this.http.get(this.url)
                .toPromise()
-               .then(response => response.json() as Cv)
+               .then(response => response.json() as Resume)
                .catch(this.handleError);
   }
 

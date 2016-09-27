@@ -1,9 +1,9 @@
 /* tslint:disable:no-unused-variable */
 
-import {Cv} from './models';
+import {Resume} from './models';
 
 describe('Cv', () => {
   it('should create an instance', () => {
-    expect(new Cv()).toBeTruthy();
+    expect(new Resume()).toBeTruthy();
   });
 });

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Cv } from './models';
+import { Resume } from './models';
 import { CvService } from './cv.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { CvService } from './cv.service';
 })
 export class AppComponent implements OnInit {
   title = 'CV';
-  cv: Cv = new Cv();
+  resume: Resume = new Resume();
 
   constructor(private cvService: CvService) { }
 
@@ -20,9 +20,9 @@ export class AppComponent implements OnInit {
   }
 
   getCv(): void {
-    this.cvService.getCv().then(x => {
-      this.cv = x;
-      console.log(this.cv); // TODO: delete
+    this.cvService.getResume().then(x => {
+      this.resume = x;
+      console.log(this.resume); // TODO: delete
     });
   }
 }
