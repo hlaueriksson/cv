@@ -8,4 +8,10 @@
   <li>Portfolio: <a href="{{resume.urls.portfolio}}">{{resume.urls.portfolio}}</a></li>
 </ul>
 
+<!--
+<ul>
+  <li *ngFor="let keyword of keywords">{{keyword}}</li>
+</ul>
+-->
+
 <app-position *ngFor="let position of resume.positions" [position]="position"></app-position>

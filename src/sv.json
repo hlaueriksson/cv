@@ -12,7 +12,26 @@
       "title": "Systemutvecklare",
       "description": "",
       "from": "februari 2016",
-      "to": null
+      "to": null,
+      "projects": [
+        {
+          "name": "Inloggning med Mobilt BankID",
+          "description": "Utveckling av nytt inloggningsförfarande på Movestics kundwebb med hjälp av Mobilt BankID. Integration med tjänst från BankID.",
+          "url": "https://www.movestic.se",
+          "roles": [
+            "Systemutvecklare"
+          ],
+          "keywords": [
+            "Umbraco",
+            "ASP.NET MVC",
+            "C#",
+            "JavaScript",
+            "BankID"
+          ],
+          "from": "mars 2016",
+          "to": "april 2016"
+        }
+      ]
     },
     {
       "company": "Valtech",

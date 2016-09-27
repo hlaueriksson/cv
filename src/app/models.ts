@@ -7,4 +7,5 @@ export class Position {
 }
 
 export class Project {
+    keywords: string[];
 }
