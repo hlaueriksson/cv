@@ -29,12 +29,14 @@ export class AppComponent implements OnInit {
     var positionId: number = 0;
     var projectId: number = 0;
 
-    resume.positions.forEach(position => {
+    for (var i = resume.positions.length - 1; i >= 0; i--) { 
       positionId++;
+      var position = resume.positions[i];
       position.id = "position/" + positionId.toString();
 
-      position.projects.forEach(project => {
+      for (var j = position.projects.length - 1; j >= 0; j--) { 
         projectId++;
+        var project = position.projects[j];
         project.id = "project/" + projectId.toString();
         project.tokens =
           project.name +
@@ -44,8 +46,8 @@ export class AppComponent implements OnInit {
           project.keywords.join() +
           project.from +
           project.to;
-      })
-    });
+      }
+    }
 
     return resume;
   }
