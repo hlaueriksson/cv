@@ -4,6 +4,9 @@ export class Resume {
 
 export class Position {
     projects: Project[];
+
+    // derived
+    id: string;
 }
 
 export class Project {

@@ -20,19 +20,22 @@ export class AppComponent implements OnInit {
 
   getResume(): void {
     this.resumeService.getResume().then(x => {
-      this.resume = x;
-      this.updateProjects();
+      this.resume = this.update(x);
       console.log(this.resume); // TODO: delete
     });
   }
 
-  updateProjects(): void {
-    var id: number = 0;
+  update(resume: Resume): Resume {
+    var positionId: number = 0;
+    var projectId: number = 0;
 
-    this.resume.positions.forEach(position => {
+    resume.positions.forEach(position => {
+      positionId++;
+      position.id = "position/" + positionId.toString();
+
       position.projects.forEach(project => {
-        id++;
-        project.id = id.toString();
+        projectId++;
+        project.id = "project/" + projectId.toString();
         project.tokens =
           project.name +
           project.description +
@@ -43,5 +46,7 @@ export class AppComponent implements OnInit {
           project.to;
       })
     });
+
+    return resume;
   }
 }
