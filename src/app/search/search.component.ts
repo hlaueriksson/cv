@@ -39,8 +39,8 @@ export class SearchComponent implements OnInit {
   }
 
   searchProjects(term: string): Observable<Project[]> {
-    var result: Project[] = [];
-    var projects = this.getProjects(term);
+    let result: Project[] = [];
+    let projects = this.getProjects(term);
 
     projects.forEach(project => {
       result.push(project);
@@ -50,14 +50,14 @@ export class SearchComponent implements OnInit {
   }
 
   getProjects(term: string): Project[] {
-    var result: Project[] = [];
+    let result: Project[] = [];
 
     this.resume.positions.forEach(position => {
       position.projects.forEach(project => {
         if (this.contains(project.tokens, term)) {
           result.push(project);
         }
-      })
+      });
     });
 
     return result;
