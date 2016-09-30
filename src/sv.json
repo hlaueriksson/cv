@@ -22,11 +22,11 @@
             "Systemutvecklare"
           ],
           "keywords": [
+            "BankID",
             "Umbraco",
             "ASP.NET MVC",
             "C#",
-            "JavaScript",
-            "BankID"
+            "JavaScript"
           ],
           "from": "mars 2016",
           "to": "april 2016"
@@ -48,8 +48,8 @@
             "Systemutvecklare"
           ],
           "keywords": [
-            "EPiServer CMS 7.5",
-            "ASP.NET MVC 4",
+            "EPiServer CMS 9",
+            "ASP.NET MVC 5",
             "C#",
             "REST",
             "Azure",
