@@ -1,4 +1,8 @@
-# Cv
+> This app is hosted at [http://henrik.laueriksson.com/cv/](http://henrik.laueriksson.com/cv/)
+
+> Build with `ng build --prod --bh /cv/`
+
+# CV
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.14.
 
