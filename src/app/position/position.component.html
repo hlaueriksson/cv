@@ -1,6 +1,8 @@
-<h3 id="{{position.id}}">{{position.company}}</h3>
-<p>{{position.title}}</p>
-<p>{{position.description}}</p>
-<p>{{position.from}} - {{position.to}}</p>
+<div class="position">
+    <h3 id="{{position.id}}">{{position.company}}</h3>
+    <p>{{position.title}}</p>
+    <p>{{position.description}}</p>
+    <p class="period">{{position.from}} - {{position.to}}</p>
 
-<app-project *ngFor="let project of position.projects" [project]="project"></app-project>
+    <app-project *ngFor="let project of position.projects" [project]="project"></app-project>
+</div>

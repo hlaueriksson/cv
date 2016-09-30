@@ -1,12 +1,14 @@
-<h4 id="{{project.id}}">{{project.name}}</h4>
-<p>{{project.from}} - {{project.to}}</p>
-<p>{{project.description}}</p>
-<p *ngIf="project.url">URL: <a href="{{project.url}}">{{project.url}}</a></p>
-<p>Roller:</p>
-<ul>
-    <li *ngFor="let role of project.roles">{{role}}</li>
-</ul>
-<p>Nyckelord:</p>
-<ul>
-    <li *ngFor="let keyword of project.keywords">{{keyword}}</li>
-</ul>
+<div class="project">
+    <h4 id="{{project.id}}">{{project.name}}</h4>
+    <p class="period">{{project.from}} - {{project.to}}</p>
+    <p>{{project.description}}</p>
+    <p *ngIf="project.url">URL: <a href="{{project.url}}">{{project.url}}</a></p>
+    <p>Roller:</p>
+    <ul>
+        <li *ngFor="let role of project.roles">{{role}}</li>
+    </ul>
+    <p>Nyckelord:</p>
+    <ul>
+        <li *ngFor="let keyword of project.keywords">{{keyword}}</li>
+    </ul>
+</div>
