@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
   getResume(): void {
     this.resumeService.getResume().then(x => {
       this.resume = this.update(x);
-      console.log(this.resume); // TODO: delete
+      //console.log(this.resume);
     });
   }
 
