@@ -1,15 +1,34 @@
 /* tslint:disable:no-unused-variable */
 
+/*
 import { TestBed, async } from '@angular/core/testing';
-import { AppComponent } from './app.component';
 
-describe('App: Cv', () => {
+import { AppComponent } from './app.component';
+import { SearchComponent } from './search/search.component';
+import { PositionComponent } from './position/position.component';
+import { ResumeService } from './resume.service';
+import { Resume } from './models';
+
+describe('App: CV', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        SearchComponent,
+        PositionComponent
       ],
-    });
+      providers: [
+        { provide: ResumeService, useClass: MockResumeService }
+      ]
+    }).overrideComponent(SearchComponent, {
+      set: {
+        template: ''
+      }
+    }).overrideComponent(PositionComponent, {
+      set: {
+        template: ''
+      }
+    })
   });
 
   it('should create the app', async(() => {
@@ -30,4 +49,13 @@ describe('App: Cv', () => {
     let compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('CV');
   }));
+
 });
+
+export class MockResumeService {
+
+  getResume(): Promise<Resume> {
+    return Promise.resolve(new Resume());
+  }
+}
+*/
