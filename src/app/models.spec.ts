@@ -2,7 +2,7 @@
 
 import {Resume} from './models';
 
-describe('Cv', () => {
+describe('Resume', () => {
   it('should create an instance', () => {
     expect(new Resume()).toBeTruthy();
   });
