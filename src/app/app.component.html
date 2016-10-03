@@ -1,20 +1,22 @@
-<h1>{{resume.name}}</h1>
-<h2>{{resume.title}}</h2>
+<div class="wrapper">
+  <h1>{{resume.name}}</h1>
+  <h2>{{resume.title}}</h2>
 
-<p>{{resume.description}}</p>
+  <p>{{resume.description}}</p>
 
-<ul *ngIf="resume.urls">
-  <li>LinkedIn: <a href="{{resume.urls.linkedin}}">{{resume.urls.linkedin}}</a></li>
-  <li>Portfolio: <a href="{{resume.urls.portfolio}}">{{resume.urls.portfolio}}</a></li>
-</ul>
+  <div *ngIf="resume.urls">
+    <p><em>LinkedIn:</em> <a href="{{resume.urls.linkedin}}">{{resume.urls.linkedin}}</a></p>
+    <p><em>Portfolio:</em> <a href="{{resume.urls.portfolio}}">{{resume.urls.portfolio}}</a></p>
+  </div>
 
-<h2>Erfarenhet</h2>
-<ul>
-  <li *ngFor="let position of resume.positions">
-    <a href="#{{position.id}}">{{position.company}}</a>
-  </li>
-</ul>
+  <h2>Erfarenhet</h2>
+  <ul>
+    <li *ngFor="let position of resume.positions">
+      <a href="#{{position.id}}">{{position.company}}</a>
+    </li>
+  </ul>
 
-<app-search [resume]="resume"></app-search>
+  <app-search [resume]="resume"></app-search>
 
-<app-position *ngFor="let position of resume.positions" [position]="position"></app-position>
+  <app-position *ngFor="let position of resume.positions" [position]="position"></app-position>
+</div>
