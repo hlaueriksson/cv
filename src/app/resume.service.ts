@@ -8,7 +8,7 @@ import { Resume } from './models';
 @Injectable()
 export class ResumeService {
 
-  private url = 'sv.json';
+  private url = '/assets/sv.json';
 
   constructor(private http: Http) { }
 
