@@ -1,8 +1,23 @@
 export class Resume {
+    name: string;
+    title: string;
+    description: string;
+    urls: Urls;
     positions: Position[];
 }
 
+export class Urls {
+    linkedin: string;
+    portfolio: string;
+    blog: string;
+}
+
 export class Position {
+    company: string;
+    title: string;
+    description: string;
+    from: string;
+    to: string;
     projects: Project[];
 
     // derived
