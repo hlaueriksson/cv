@@ -1,9 +1,10 @@
 {
   "name": "Henrik Lau Eriksson",
   "title": "Systemutvecklare",
-  "description": "Jag inriktar mig främst på utveckling av system för webben och är starkast på kod som körs backend. Jag har mångårig erfarenhet av programmering i .NET och jag brinner för testning, arkitektur och agila arbetssätt. Jag läste datateknik på KTH med inriktning programutveckling.",
+  "description": "Jag inriktar mig främst på utveckling av system för webben och är starkast på kod som körs backend. Jag har mångårig erfarenhet av programmering i .NET och jag brinner för testning, arkitektur och agila arbetssätt. Mitt fokus de senaste åren har varit på att bygga lösningar för betalning på nätet. Jag läste datateknik på KTH med inriktning programutveckling.",
   "urls": {
     "linkedin": "https://www.linkedin.com/in/henriklaueriksson",
+    "github": "https://github.com/hlaueriksson",
     "portfolio": "http://henrik.laueriksson.com",
     "blog": "http://conductofcode.io"
   },

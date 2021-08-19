@@ -5,9 +5,10 @@
   <p>{{resume.description}}</p>
 
   <div *ngIf="resume.urls">
+    <p><em>Kontaktinformation:</em> <a href="{{resume.urls.portfolio}}">{{resume.urls.portfolio}}</a></p>
     <p><em>LinkedIn:</em> <a href="{{resume.urls.linkedin}}">{{resume.urls.linkedin}}</a></p>
-    <p><em>Portfolio:</em> <a href="{{resume.urls.portfolio}}">{{resume.urls.portfolio}}</a></p>
-    <p><em>Blog:</em> <a href="{{resume.urls.blog}}">{{resume.urls.blog}}</a></p>
+    <p><em>GitHub:</em> <a href="{{resume.urls.github}}">{{resume.urls.github}}</a></p>
+    <p><em>Blogg:</em> <a href="{{resume.urls.blog}}">{{resume.urls.blog}}</a></p>
   </div>
 
   <h2>Erfarenhet</h2>
